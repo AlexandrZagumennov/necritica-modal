@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Модальное окно</title>
+	<link rel="stylesheet" href="index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+	<script defer src="modal.js"></script>
+</head>
+<body>
+	<div class="modal__overlay">
+		<!-- Модальное окно. Пользователь не подписан на рассылку -->
+		<form action="https://jsonplaceholder.typicode.com/todos" method="POST" class="modal__form">
+			<button class="modal__close"></button>
+			
+			<h3 class="modal__title">Один мальчик подписался на рассылку <span>Не</span>критики и постепенно, сам повысил конверсию лендинга</h3>
+	
+			<p class="modal__description">Без мам, пап и маркетологов. Подпишись сейчас и получай простой и понятный контент о том, как превратить посетителей в покупателей</p>
+	
+			<div class="modal__bottom-wrapper">
+				<div class="modal__input-container">
+					<input class="modal__input" type="email" name="email" id="modal-email" placeholder="Введите ваш e-mail" required>
+	
+						<label class="modal__label">
+							<input type="checkbox" name="personal-data" id="personal-data" class="modal__checkbox" required> согласен на обработку <a href="#" class="modal__label-link">персональных данных</a> 
+						</label>
+				</div>
+	
+				<button class="modal__btn">Подписаться</button>
+			</div>
+		</form>
+		<!-- Модальное окно. Пользователь не подписан на рассылку END-->
+
+
+		<!-- Модальное окно. Пользователь подписан на рассылку -->
+		<div class="modal__success-subscribe">
+			<button class="modal__close"></button>
+
+			<h3 class="modal__title">Вы подписаны на рассык<span>у Не</span>критики</h3>
+
+			<p class="modal__description">Проверьте папку спам, первое письмо уже ушло.</p>
+		</div>
+		<!-- Модальное окно. Пользователь подписан на рассылку END -->
+	</div>
+</body>
+</html>
