@@ -64,3 +64,20 @@ document.body.addEventListener('keyup', event => {
 });
 
 
+
+
+// Вывод модального окна-напоминания о необходимости указать адрес электронной почты и отметить чек-бокс
+const modalBtn = document.querySelector('.modal__btn');
+const checkbox = document.querySelector('.modal__checkbox');
+const modalInput = document.querySelector('.modal__input');
+
+modalBtn.addEventListener('click', () => {
+	if (checkbox.checked === false && modalInput.value === '') {
+		alert('Для отправки формы необходимо указать адрес электронной почты и Ваше согласие на обработку персональных данных')
+	} else if (checkbox.checked === false && modalInput.value !== '') {
+		alert('Для отправки формы необходимо Ваше согласие на обработку персональных данных')
+	} else if (checkbox.checked === true && modalInput.value === '') {
+		alert('Для отправки формы необходимо указать адрес электронной почты')
+	}
+});
+

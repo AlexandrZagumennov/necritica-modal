@@ -8,11 +8,12 @@
 	<link rel="stylesheet" href="index.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 	<script defer src="modal.js"></script>
+	<!--<script defer src="modal-updated.js"></script>-->
 </head>
 <body>
-	<div class="modal__overlay">
+	<div class="modal__overlay" id="modal__overlay">
 		<!-- Модальное окно. Пользователь не подписан на рассылку -->
-		<form action="https://jsonplaceholder.typicode.com/todos" method="POST" class="modal__form">
+		<form action="https://jsonplaceholder.typicode.com/todos" method="POST" class="modal__form" data-modal="1">
 			<button class="modal__close"></button>
 			
 			<h3 class="modal__title">Один мальчик подписался на рассылку <span>Не</span>критики и постепенно, сам повысил конверсию лендинга</h3>
@@ -35,7 +36,7 @@
 
 
 		<!-- Модальное окно. Пользователь подписан на рассылку -->
-		<div class="modal__success-subscribe">
+		<div class="modal__success-subscribe" data-modal="2">
 			<button class="modal__close"></button>
 
 			<h3 class="modal__title">Вы подписаны на рассык<span>у Не</span>критики</h3>
