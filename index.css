@@ -293,7 +293,7 @@
 	}
 }
 
-@media (max-width: 368px) {
+@media (max-width: 468px) {
 	.modal__close {
 		top: 5px;
 		right: 5px;
