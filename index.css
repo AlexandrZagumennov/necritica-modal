@@ -24,13 +24,6 @@
 	padding: 50px 70px 50px 40px;
 	background-color: #F9F9F9;
 	position: relative;
-	animation: zoomIn 1s;
-}
-
-@keyframes zoomIn {
-	from {
-		opacity: 0;
-	}
 }
 
 .modal {

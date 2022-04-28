@@ -47,6 +47,8 @@ const runModalClose = (target) => {
 };
 
 // Обработка события открытия модального окна после завершения загрузки контента, чере 2,5 с 
+// В runModalOpen(1) прокинут data-modal="1"
+
 document.addEventListener('DOMContentLoaded', () => {
 	setTimeout(() => {
 		runModalOpen(1)
